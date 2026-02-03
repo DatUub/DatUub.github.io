@@ -1,49 +1,56 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 const name = "Ari Cartagena";
 const username = "datuub";
-const headline = "Computer Engineering Student at Florida Atlantic University | NSF LEARN Research Participant";
+const headline =
+  "Computer Engineering Student at Florida Atlantic University | NSF LEARN Research Participant";
 
 const projects = [
   {
     title: "ItemChanger.Silksong",
-    description: "Active contributor to the C# game modding framework for Hollow Knight: Silksong. Building item randomization systems and gameplay modifications.",
+    description:
+      "Active contributor to the C# game modding framework for Hollow Knight: Silksong. Building item randomization systems and gameplay modifications.",
     tags: ["C#", "Game Modding", "BepInEx", "Unity"],
     link: "https://github.com/hk-modding/ItemChanger.Silksong",
-    icon: "🎮"
+    icon: "🎮",
   },
   {
     title: "Hardware Repair & Modding",
-    description: "Full repairs on Framework 12 and various laptops. Experienced with Nintendo Switch mods (screen/battery replacements, Joycon swaps) and iPhone screen repairs.",
+    description:
+      "Full repairs on Framework 12 and various laptops. Experienced with Nintendo Switch mods (screen/battery replacements, Joycon swaps) and iPhone screen repairs.",
     tags: ["Framework", "Repair", "Soldering", "Mobile"],
     link: "#",
-    icon: "🔧"
-  }
+    icon: "🔧",
+  },
 ];
 
 const interests = [
   { icon: "💻", label: "Low-Level Computing" },
   { icon: "🎮", label: "Game Modding" },
-  { icon: "🔓", label: "Open Source" }
+  { icon: "🔓", label: "Open Source" },
 ];
 
 const skills = [
   {
     category: "Languages & Frameworks",
     icon: "⚡",
-    items: ["C++", "C#", "Java", "JavaScript", "Python", "Rust (Learning)"]
+    items: ["C++", "C#", "Java", "JavaScript", "Python", "Rust (Learning)"],
   },
   {
     category: "Hardware & Engineering",
     icon: "🔧",
-    items: ["PCB Repair & Soldering", "Device Diagnostics (iPhone/Framework)", "Computer Assembly"]
+    items: [
+      "PCB Repair & Soldering",
+      "Device Diagnostics (iPhone/Framework)",
+      "Computer Assembly",
+    ],
   },
   {
     category: "Tools & Platforms",
     icon: "🛠️",
-    items: ["Linux (Arch/CachyOS)", "Git/GitHub", "Discord API"]
-  }
+    items: ["Linux (Arch/CachyOS)", "Git/GitHub", "Discord API"],
+  },
 ];
 ---
 
@@ -53,15 +60,30 @@ const skills = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ari Cartagena | Computer Engineering & Open Source</title>
-    <meta name="description" content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair." />
+    <meta
+      name="description"
+      content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair."
+    />
     <meta name="author" content="Ari Cartagena" />
-    <meta property="og:title" content="Ari Cartagena | Computer Engineering & Open Source" />
-    <meta property="og:description" content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair." />
+    <meta
+      property="og:title"
+      content="Ari Cartagena | Computer Engineering & Open Source"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://datuub.github.io" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Ari Cartagena | Computer Engineering & Open Source" />
-    <meta name="twitter:description" content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair." />
+    <meta
+      name="twitter:title"
+      content="Ari Cartagena | Computer Engineering & Open Source"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair."
+    />
     <link rel="canonical" href="https://datuub.github.io" />
   </head>
   <body>
@@ -75,35 +97,60 @@ const skills = [
         <h1 class="hero-name animate-fade-in animate-delay-1">{name}</h1>
         <p class="hero-username animate-fade-in animate-delay-1">@{username}</p>
         <p class="hero-headline animate-fade-in animate-delay-2">{headline}</p>
-        
+
         <div class="live-status animate-fade-in animate-delay-2">
           <span class="status-dot"></span>
           <span class="status-text">Currently Modding: Hollow Knight</span>
         </div>
 
         <div class="hero-interests animate-fade-in animate-delay-3">
-          {interests.map((interest) => (
-            <span class="interest-tag">
-              <span class="interest-icon">{interest.icon}</span>
-              {interest.label}
-            </span>
-          ))}
+          {
+            interests.map((interest) => (
+              <span class="interest-tag">
+                <span class="interest-icon">{interest.icon}</span>
+                {interest.label}
+              </span>
+            ))
+          }
         </div>
         <div class="hero-cta animate-fade-in animate-delay-4">
-          <a href="https://github.com/datuub" class="btn btn-primary" target="_blank" rel="noopener">
+          <a
+            href="https://github.com/datuub"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              ></path>
             </svg>
             Check my GitHub
           </a>
-          <a href="https://discord.com/users/Uub__" class="btn btn-outline" target="_blank" rel="noopener">
+          <a
+            href="https://discord.com/users/Uub__"
+            class="btn btn-outline"
+            target="_blank"
+            rel="noopener"
+          >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+              ></path>
             </svg>
             Add on Discord
           </a>
           <a href="mailto:personal@arisafari.me" class="btn btn-outline">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <rect x="2" y="4" width="20" height="16" rx="2"></rect>
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
@@ -120,10 +167,14 @@ const skills = [
           <div class="about-content">
             <div class="about-text">
               <p>
-                Hi, I'm <strong>Ari</strong>. I'm a Computer Engineering undergraduate at FAU and an <strong>NSF LEARN Scholar</strong> (Current LVL: 19).
+                Hi, I'm <strong>Ari</strong>. I'm a Computer Engineering
+                undergraduate at FAU and an <strong>NSF LEARN Scholar</strong> (Current
+                LVL: 19).
               </p>
               <p>
-                I specialize in C++, C#, and Java, and I'm currently adding Rust and Python to my stack. When I'm not studying, I'm usually deep in Discord (Uub__) or taking things apart to see how they work.
+                I specialize in C++, C#, and Java, and I'm currently adding Rust
+                and Python to my stack. When I'm not studying, I'm usually deep
+                in Discord (Uub__) or taking things apart to see how they work.
               </p>
             </div>
             <div class="about-stats">
@@ -151,19 +202,21 @@ const skills = [
         <div class="container">
           <h2 class="section-title">Technical Arsenal</h2>
           <div class="skills-grid">
-            {skills.map((skill) => (
-              <div class="skill-card card">
-                <div class="skill-header">
-                  <span class="skill-icon">{skill.icon}</span>
-                  <h3 class="skill-category">{skill.category}</h3>
+            {
+              skills.map((skill) => (
+                <div class="skill-card card">
+                  <div class="skill-header">
+                    <span class="skill-icon">{skill.icon}</span>
+                    <h3 class="skill-category">{skill.category}</h3>
+                  </div>
+                  <ul class="skill-list">
+                    {skill.items.map((item) => (
+                      <li class="skill-item">{item}</li>
+                    ))}
+                  </ul>
                 </div>
-                <ul class="skill-list">
-                  {skill.items.map((item) => (
-                    <li class="skill-item">{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+              ))
+            }
           </div>
         </div>
       </section>
@@ -172,23 +225,30 @@ const skills = [
         <div class="container">
           <h2 class="section-title">Featured Projects</h2>
           <div class="projects-grid">
-            {projects.map((project) => (
-              <article class="project-card card">
-                <div class="project-icon">{project.icon}</div>
-                <h3 class="project-title">{project.title}</h3>
-                <p class="project-description">{project.description}</p>
-                <div class="project-tags">
-                  {project.tags.map((tag) => (
-                    <span class="tag">{tag}</span>
-                  ))}
-                </div>
-                {project.link !== "#" && (
-                  <a href={project.link} class="project-link" target="_blank" rel="noopener">
-                    View on GitHub →
-                  </a>
-                )}
-              </article>
-            ))}
+            {
+              projects.map((project) => (
+                <article class="project-card card">
+                  <div class="project-icon">{project.icon}</div>
+                  <h3 class="project-title">{project.title}</h3>
+                  <p class="project-description">{project.description}</p>
+                  <div class="project-tags">
+                    {project.tags.map((tag) => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                  {project.link !== "#" && (
+                    <a
+                      href={project.link}
+                      class="project-link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      View on GitHub →
+                    </a>
+                  )}
+                </article>
+              ))
+            }
           </div>
         </div>
       </section>
@@ -198,7 +258,9 @@ const skills = [
       <div class="container footer-content">
         <p class="footer-text">© 2026 Ari Cartagena. Built with Astro.</p>
         <div class="footer-links">
-          <a href="https://github.com/datuub" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/datuub" target="_blank" rel="noopener"
+            >GitHub</a
+          >
           <a href="mailto:personal@arisafari.me">Email</a>
         </div>
       </div>
@@ -218,10 +280,22 @@ const skills = [
       .hero-bg {
         position: absolute;
         inset: 0;
-        background: 
-          radial-gradient(circle at 20% 80%, rgba(180, 190, 254, 0.08) 0%, transparent 40%),
-          radial-gradient(circle at 80% 20%, rgba(203, 166, 247, 0.08) 0%, transparent 40%),
-          radial-gradient(circle at 50% 50%, rgba(148, 226, 213, 0.05) 0%, transparent 50%);
+        background:
+          radial-gradient(
+            circle at 20% 80%,
+            rgba(180, 190, 254, 0.08) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(203, 166, 247, 0.08) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 50% 50%,
+            rgba(148, 226, 213, 0.05) 0%,
+            transparent 50%
+          );
         pointer-events: none;
       }
 
@@ -253,8 +327,13 @@ const skills = [
       }
 
       @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
       }
 
       .hero-name {
@@ -262,7 +341,11 @@ const skills = [
         font-weight: 700;
         letter-spacing: -0.02em;
         margin-bottom: 8px;
-        background: linear-gradient(135deg, var(--ctp-text) 0%, var(--ctp-lavender) 100%);
+        background: linear-gradient(
+          135deg,
+          var(--ctp-text) 0%,
+          var(--ctp-lavender) 100%
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -271,7 +354,7 @@ const skills = [
       .hero-username {
         font-size: 1.1rem;
         color: var(--ctp-overlay0);
-        font-family: 'JetBrains Mono', monospace;
+        font-family: "JetBrains Mono", monospace;
         margin-bottom: 16px;
       }
 
@@ -592,5 +675,125 @@ const skills = [
         }
       }
     </style>
+
+    <script>
+      // --- CONFIGURATION ---
+      // Sequence: Up, Up, Down, Down, Left, Right, Left, Right, B, A, Enter
+      const konamiCode = [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+        "b",
+        "a",
+        "Enter",
+      ];
+      let cursor = 0;
+
+      // --- DESKTOP: KEYBOARD LISTENER ---
+      document.addEventListener("keydown", (e) => {
+        // Allow 'b'/'B' and 'a'/'A' case insensitivity
+        const key = e.key.toLowerCase();
+        const target = konamiCode[cursor].toLowerCase();
+        const code = e.code;
+
+        // Match either the key value (e.g. "Enter", "b") or the Code (e.g. "ArrowUp")
+        if (key === target || code === konamiCode[cursor]) {
+          cursor++;
+          if (cursor === konamiCode.length) {
+            activateGodMode();
+            cursor = 0;
+          }
+        } else {
+          cursor = 0;
+        }
+      });
+
+      // --- MOBILE: MARIO RHYTHM DETECTOR ---
+      // Rhythm: "bum bum, bum, bum, bum" (Cluster of 5) ... "bumm bah" (2 Finishers)
+      const statusPill = document.querySelector(".live-status");
+      let tapTimes = [];
+
+      if (statusPill) {
+        statusPill.addEventListener("click", (e) => {
+          e.preventDefault();
+          const now = Date.now();
+
+          // Reset if idle for 2 seconds
+          if (
+            tapTimes.length > 0 &&
+            now - tapTimes[tapTimes.length - 1] > 2000
+          ) {
+            tapTimes = [];
+          }
+
+          tapTimes.push(now);
+
+          if (tapTimes.length === 7) {
+            const intervals = [];
+            for (let i = 1; i < tapTimes.length; i++) {
+              intervals.push(tapTimes[i] - tapTimes[i - 1]);
+            }
+
+            // Logic: The first 4 intervals (between the first 5 taps) should be fast/consistent.
+            const fastPart = intervals.slice(0, 4);
+            const avgFast =
+              fastPart.reduce((a, b) => a + b, 0) / fastPart.length;
+
+            // The 5th interval (the big gap) should be notably longer than the fast average
+            const bigGap = intervals[4];
+
+            // Check 1: Are the first 5 notes a "cluster"? (fast taps)
+            const isCluster = fastPart.every((i) => i < 600);
+
+            // Check 2: Is the gap actually a gap? (At least 1.5x the fast beat)
+            const isGap = bigGap > avgFast * 1.5;
+
+            if (isCluster && isGap) {
+              activateGodMode();
+            }
+
+            tapTimes = []; // Reset
+          }
+        });
+      }
+
+      // --- GOD MODE FUNCTION ---
+      function activateGodMode() {
+        // 1. Enable Editing
+        document.body.contentEditable = "true";
+        document.designMode = "on";
+
+        // 2. Visuals (Rainbow Borders)
+        const style = document.createElement("style");
+        style.innerHTML = `
+          * { transition: all 0.3s ease; }
+          .card, .hero-badge, .live-status, .btn {
+            animation: rainbow-border 2s linear infinite !important;
+            border: 2px solid transparent !important;
+          }
+          @keyframes rainbow-border {
+            0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+            20% { border-color: #ffff00; box-shadow: 0 0 15px #ffff00; }
+            40% { border-color: #00ff00; box-shadow: 0 0 15px #00ff00; }
+            60% { border-color: #00ffff; box-shadow: 0 0 15px #00ffff; }
+            80% { border-color: #0000ff; box-shadow: 0 0 15px #0000ff; }
+            100% { border-color: #ff00ff; box-shadow: 0 0 15px #ff00ff; }
+          }
+        `;
+        document.head.appendChild(style);
+
+        // 3. Vibration & Alert
+        if (navigator.vibrate)
+          navigator.vibrate([50, 30, 50, 30, 50, 30, 50, 200, 100, 100, 100]);
+        alert(
+          "🔧 SYSTEM OVERCLOCKED: God Mode Activated.\n\nPress OK to edit the page.",
+        );
+      }
+    </script>
   </body>
 </html>
