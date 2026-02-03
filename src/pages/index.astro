@@ -1,10 +1,10 @@
 ---
 import "../styles/global.css";
 
-const name = "Ari Cartagena";
+const name = "Ari C.";
 const username = "datuub";
 const headline =
-  "Computer Engineering Student at Florida Atlantic University | NSF LEARN Research Participant";
+  "Computer Engineering Student at Florida Atlantic University | NSF LEARN Scholar";
 
 const projects = [
   {
@@ -59,30 +59,24 @@ const skills = [
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ari Cartagena | Computer Engineering & Open Source</title>
+    <title>Ari C. • CE Student @ FAU</title>
     <meta
       name="description"
-      content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair."
+      content="Computer Engineering Student at Florida Atlantic University | NSF LEARN Scholar"
     />
-    <meta name="author" content="Ari Cartagena" />
-    <meta
-      property="og:title"
-      content="Ari Cartagena | Computer Engineering & Open Source"
-    />
+    <meta name="author" content="Ari C." />
+    <meta property="og:title" content="Ari C. • CE Student @ FAU" />
     <meta
       property="og:description"
-      content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair."
+      content="Computer Engineering Student at Florida Atlantic University | NSF LEARN Scholar"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://datuub.github.io" />
     <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Ari Cartagena | Computer Engineering & Open Source"
-    />
+    <meta name="twitter:title" content="Ari C. • CE Student @ FAU" />
     <meta
       name="twitter:description"
-      content="Portfolio of Ari Cartagena, a Computer Engineering student at FAU and open-source contributor specializing in C#, iOS tools, and hardware repair."
+      content="Computer Engineering Student at Florida Atlantic University | NSF LEARN Scholar"
     />
     <link rel="canonical" href="https://datuub.github.io" />
   </head>
@@ -256,7 +250,7 @@ const skills = [
 
     <footer class="footer">
       <div class="container footer-content">
-        <p class="footer-text">© 2026 Ari Cartagena. Built with Astro.</p>
+        <p class="footer-text">© 2026 Ari C. Built with Astro.</p>
         <div class="footer-links">
           <a href="https://github.com/datuub" target="_blank" rel="noopener"
             >GitHub</a
@@ -714,7 +708,7 @@ const skills = [
       });
 
       // --- MOBILE: MARIO RHYTHM DETECTOR ---
-      // Rhythm: "bum bum, bum, bum, bum" (Cluster of 5) ... "bumm bah" (2 Finishers)
+      // Rhythm: 6 fast taps ... [pause] ... 1 final tap
       const statusPill = document.querySelector(".live-status");
       let tapTimes = [];
 
@@ -739,15 +733,15 @@ const skills = [
               intervals.push(tapTimes[i] - tapTimes[i - 1]);
             }
 
-            // Logic: The first 4 intervals (between the first 5 taps) should be fast/consistent.
-            const fastPart = intervals.slice(0, 4);
+            // Logic: The first 5 intervals (between the first 6 taps) should be fast/consistent.
+            const fastPart = intervals.slice(0, 5);
             const avgFast =
               fastPart.reduce((a, b) => a + b, 0) / fastPart.length;
 
-            // The 5th interval (the big gap) should be notably longer than the fast average
-            const bigGap = intervals[4];
+            // The 6th interval (the big gap before final tap) should be notably longer
+            const bigGap = intervals[5];
 
-            // Check 1: Are the first 5 notes a "cluster"? (fast taps)
+            // Check 1: Are the first 6 notes a "cluster"? (fast taps)
             const isCluster = fastPart.every((i) => i < 600);
 
             // Check 2: Is the gap actually a gap? (At least 1.5x the fast beat)
