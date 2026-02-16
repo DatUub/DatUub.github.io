@@ -10,10 +10,19 @@ const projects = [
   {
     title: "ItemChanger.Silksong",
     description:
-      "Active contributor to the C# game modding framework for Hollow Knight: Silksong. Building item randomization systems and gameplay modifications.",
+      "Active contributor to the C# game modding framework for Hollow Knight: Silksong. Building item randomization systems, gameplay modifications, and companion mods like QuestMod.",
     tags: ["C#", "Game Modding", "BepInEx", "Unity"],
     link: "https://github.com/hk-modding/ItemChanger.Silksong",
     icon: "🎮",
+  },
+  {
+    title: "QuestMod",
+    description:
+      "Quest management mod for Silksong — accept, complete, and customize quest targets with a full debug GUI. Features quest chain grouping, target count overrides, guaranteed Silver Bells, and more.",
+    tags: ["C#", "BepInEx", "Harmony", "Silksong"],
+    link: "https://thunderstore.io/c/hollow-knight-silksong/p/DatUub/QuestMod/",
+    github: "https://github.com/DatUub/Silksong.QuestMod",
+    icon: "📜",
   },
   {
     title: "Hardware Repair & Modding",
@@ -230,6 +239,16 @@ const skills = [
                       <span class="tag">{tag}</span>
                     ))}
                   </div>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      class="project-link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      View on GitHub →
+                    </a>
+                  )}
                   {project.link !== "#" && (
                     <a
                       href={project.link}
@@ -237,7 +256,9 @@ const skills = [
                       target="_blank"
                       rel="noopener"
                     >
-                      View on GitHub →
+                      {project.link.includes("thunderstore.io")
+                        ? "View on Thunderstore →"
+                        : "View on GitHub →"}
                     </a>
                   )}
                 </article>
